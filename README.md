@@ -19,6 +19,9 @@ Ziffernblätter. Alles selbst gebaut, alles ohne Gradle.
 [![iPhone](https://img.shields.io/badge/Gegenstelle-iPhone-lightgrey?style=flat-square&logo=apple&logoColor=white)](docs/03-herold.md)
 [![Doku](https://img.shields.io/badge/Doku-ausführlich-informational?style=flat-square)](#-dokumentation)
 
+[![Ko-fi](https://img.shields.io/badge/Unterstützen_auf-Ko--fi-FF5E5B?style=for-the-badge&logo=kofi&logoColor=white)](https://ko-fi.com/chackrahunter)
+[![PayPal](https://img.shields.io/badge/Spenden_mit-PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://www.paypal.me/Donsko2007)
+
 <br>
 
 [**Einrichten**](docs/00-uhr-einrichten.md) ·
@@ -233,10 +236,15 @@ Wenn dir das etwas wert ist oder dir das Projekt Zeit gespart hat, freue ich mic
 <div align="center">
 <br>
 
-<!-- SPENDEN -->
+<a href="https://ko-fi.com/chackrahunter"><img src="https://img.shields.io/badge/Unterstützen_auf-Ko--fi-FF5E5B?style=for-the-badge&logo=kofi&logoColor=white" alt="Auf Ko-fi unterstützen"></a>
+&nbsp;
+<a href="https://www.paypal.me/Donsko2007"><img src="https://img.shields.io/badge/Spenden_mit-PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white" alt="Mit PayPal spenden"></a>
 
 <br>
 </div>
+
+- **Ko-fi:** [ko-fi.com/chackrahunter](https://ko-fi.com/chackrahunter)
+- **PayPal:** [paypal.me/Donsko2007](https://www.paypal.me/Donsko2007)
 
 Auch ohne Geld hilfst du: ⭐ einen Stern dalassen, Fehler melden, oder
 weitersagen.
