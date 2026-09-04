@@ -18,6 +18,8 @@ Ziffernblätter. Alles selbst gebaut, alles ohne Gradle.
 [![Getestet auf](https://img.shields.io/badge/getestet-Galaxy%20Watch%206%20Classic-black?style=flat-square&logo=samsung&logoColor=white)](#voraussetzungen)
 [![iPhone](https://img.shields.io/badge/Gegenstelle-iPhone-lightgrey?style=flat-square&logo=apple&logoColor=white)](docs/03-herold.md)
 [![Doku](https://img.shields.io/badge/Doku-ausführlich-informational?style=flat-square)](#-dokumentation)
+[![Release](https://img.shields.io/github/v/release/chackrahunter/herold?style=flat-square&label=Release&color=success)](https://github.com/chackrahunter/herold/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/chackrahunter/herold/total?style=flat-square&label=Downloads)](https://github.com/chackrahunter/herold/releases)
 
 [![Ko-fi](https://img.shields.io/badge/Unterstützen_auf-Ko--fi-FF5E5B?style=for-the-badge&logo=kofi&logoColor=white)](https://ko-fi.com/chackrahunter)
 [![PayPal](https://img.shields.io/badge/Spenden_mit-PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://www.paypal.me/Donsko2007)
@@ -26,12 +28,37 @@ Ziffernblätter. Alles selbst gebaut, alles ohne Gradle.
 
 [🇬🇧 English](README.en.md) · 🇩🇪 **Deutsch**
 
+[**⬇ Fertige APKs**](https://github.com/chackrahunter/herold/releases/latest) ·
 [**Einrichten**](docs/00-uhr-einrichten.md) ·
 [**Doku**](#-dokumentation) ·
 [**Erkenntnisse**](docs/07-erkenntnisse.md) ·
 [**Unterstützen**](#-unterstützen)
 
 </div>
+
+---
+
+## ⬇ Fertige APKs herunterladen
+
+**Du musst nichts bauen.** Seit [**v1.1.0**](https://github.com/chackrahunter/herold/releases/latest)
+liegen fertige, signierte APKs im Release:
+
+| Datei | Was es ist |
+|---|---|
+| [`herold-1.1.0.apk`](https://github.com/chackrahunter/herold/releases/download/v1.1.0/herold-1.1.0.apk) | Benachrichtigungen vom iPhone, EKG, Puls, SpO₂, Hauttemperatur, Atemfrequenz |
+| [`markt-1.1.0.apk`](https://github.com/chackrahunter/herold/releases/download/v1.1.0/markt-1.1.0.apk) | App-Laden ohne Google-Konto |
+| [`zifferblatt-1.1.0.apk`](https://github.com/chackrahunter/herold/releases/download/v1.1.0/zifferblatt-1.1.0.apk) | Beispiel-Ziffernblatt |
+
+```bash
+adb connect <uhr-ip>:<port>
+adb install herold-1.1.0.apk
+```
+
+> [!WARNING]
+> Scheitert die Installation mit `Can't install packages while in secure FRP`,
+> steht die Uhr im Werksschutz-Modus. Das blockiert **jede** Installation auf einer
+> Uhr ohne Konto. Der eine Befehl dagegen steht in
+> [docs/07-erkenntnisse.md](docs/07-erkenntnisse.md).
 
 ---
 
