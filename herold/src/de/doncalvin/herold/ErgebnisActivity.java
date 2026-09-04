@@ -138,13 +138,15 @@ public class ErgebnisActivity extends Activity {
                     - 0.20 * Math.exp(-Math.pow((ph - 0.34) / 0.018, 2))
                     + 0.13 * Math.exp(-Math.pow((ph - 0.58) / 0.055, 2)));
         }
-        // Echte Schlagabstaende aus einer Messung, damit die Vorschau zeigt,
-        // wie es tatsaechlich aussieht - eine reine Sinuswelle faellt im
-        // Streubild auf wenige Punkte zusammen und taeuscht.
-        int[] echt = {1024,1041,1092,968,1070,1096,954,962,1149,1170,1000,1105,
-            1194,970,1024,1143,951,1059,1182,1149,1027,1147,1176,965,959,1042,
-            1026,915,1069,1174,993,1076,1120,985,966,1118,1037,893,1036,1099,
-            972,1084,1155,1048,919,1086,1146,971,1080,1150,1041,962,1123,1152,977,1080};
+        // Nachgebildete Schlagabstaende mit wandernder Atemperiode (siehe
+        // test/Verteilung.java, atem()). Erzeugt statt gemessen: eine reine
+        // Sinuswelle faellt im Streubild auf wenige Punkte zusammen und taeuscht,
+        // die Wanderung nicht.
+        int[] echt = {703,886,1006,879,728,845,1048,854,793,884,947,829,
+            777,931,948,772,819,1014,872,749,912,969,800,776,
+            915,928,732,803,960,918,736,863,984,859,777,935,
+            903,695,866,979,792,774,893,944,736,855,962,786,
+            816,981,842,738,901,900,717,859};
         java.util.List<Integer> rr = new java.util.ArrayList<>();
         for (int v : echt) rr.add(v);
         a.abstaende = rr;

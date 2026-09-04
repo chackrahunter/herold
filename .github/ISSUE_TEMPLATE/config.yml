@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Question, idea or "am I doing this right?"
+    url: https://github.com/chackrahunter/herold/discussions
+    about: Anything that is not a defect report belongs here — setup questions, ideas, showing off your own watch face. Fragen auf Deutsch sind genauso willkommen.
+  - name: The collected findings (read this first)
+    url: https://github.com/chackrahunter/herold/blob/master/docs/07-erkenntnisse.md
+    about: Installation fails, the iPhone does not find the watch, the build breaks — the answers that cost the most hours are on this one page.
+  - name: Setting up a watch without a Samsung phone
+    url: https://github.com/chackrahunter/herold/blob/master/docs/00-uhr-einrichten.md
+    about: Start here if the watch is not set up yet. A Galaxy Watch 4 or newer officially needs an Android phone; this is the documented way around it.

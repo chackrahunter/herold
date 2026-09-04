@@ -32,7 +32,6 @@ public class HomeActivity extends Activity {
     protected void onCreate(Bundle b) {
         super.onCreate(b);
 
-        // Einmalige Vorbelegung mit den bekannten Werten; ueberschreibt nichts,
         // Körperdaten einmalig vorbelegen. Die Körperanalyse (BIA) braucht
         // Größe, Gewicht, Alter und Geschlecht, sonst liefert der Sensor nichts.
         // Hier stehen neutrale Platzhalter - eigene Werte im Bildschirm

@@ -1,0 +1,89 @@
+name: It runs on my watch
+description: Tell us how it went on a model other than the Galaxy Watch 6 Classic. Three fields, two minutes.
+title: "[Watch] "
+labels: ["compatibility"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **This is the single most useful thing anyone can send.**
+
+        Everything here was built and tested on exactly one watch — a Galaxy
+        Watch 6 Classic (SM-R955F) at an iPhone 14. Every other model is an
+        educated guess until somebody reports back.
+
+        So a report is worth sending **whatever the outcome**. "Works, except
+        the ECG" is just as valuable as "works perfectly", and "does not get
+        past the install" is more valuable still — it saves the next person
+        the evening you just spent.
+
+        Three fields are enough. Everything below them is optional.
+
+        **🇩🇪 Deutsch ist genauso willkommen** — nur die Feldnamen sind auf Englisch.
+
+        *Please leave out Bluetooth and MAC addresses, IP addresses, serial
+        numbers and any real health readings.*
+
+  - type: input
+    id: watch-model
+    attributes:
+      label: Which watch?
+      description: "The model number. `adb shell getprop ro.product.model` prints it, and it is on the back of the watch."
+      placeholder: "SM-R875F, Galaxy Watch 4 Classic"
+    validations:
+      required: true
+
+  - type: input
+    id: wear-version
+    attributes:
+      label: Wear OS version
+      description: "Settings → About watch → Software information → Software version."
+      placeholder: "Wear OS 4, One UI Watch 5"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: outcome
+    attributes:
+      label: How did it go?
+      options:
+        - "Works — everything I tried did what the docs said"
+        - "Mostly works — some parts did not"
+        - "Barely works — more broken than not"
+        - "Does not work at all on this model"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: works
+    attributes:
+      label: What did you actually get running?
+      description: Tick what worked. Leave the rest blank — blank just means "did not try or did not work", and the notes field below is the place to say which.
+      options:
+        - label: "Notifications from the iPhone (ANCS)"
+        - label: "ECG"
+        - label: "Heart rate and rhythm"
+        - label: "Blood oxygen (SpO₂)"
+        - label: "Skin temperature"
+        - label: "Respiratory rate"
+        - label: "Pulse arrival time"
+        - label: "markt — signing in and installing an app without a Google account"
+        - label: "zifferblatt — building the watch face and setting it active"
+        - label: "werkzeuge — uhr.sh finding the watch, entruempeln.sh removing apps"
+
+  - type: input
+    id: phone
+    attributes:
+      label: Which phone is it paired with?
+      description: Optional. Only matters for the notification bridge.
+      placeholder: "iPhone 14, iOS 18"
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything different?
+      description: |
+        Optional, and the most interesting part. Did a step in the docs not
+        match your watch? Did something need an extra command? Did a sensor
+        report nothing? If you hit an error, paste the adb output here.
+      placeholder: "Everything followed the docs, except the developer options sit under a different menu on this model, and the ECG screen stays empty."

@@ -301,8 +301,7 @@ public class RhythmusAnalyse {
         boolean chaotisch = e.entropie > 0.65f;
         // Zwei voneinander unabhaengige Wege, ein Muster zu finden. Einzeln
         // kippt jeder von beiden bei Messrauschen - an einer echten Messung
-        // eines 18-Jaehrigen lagen sie bei 0,30 und 0,64, beide knapp an der
-        // Grenze. Darum: ein deutliches Signal genuegt, sonst muessen beide
+        // lagen sie bei 0,30 und 0,64, beide knapp an der Grenze. Darum: ein deutliches Signal genuegt, sonst muessen beide
         // schwaecheren zusammen dafuer sprechen.
         boolean hatMuster = e.spektral > 0.55f
                          || e.kopplung > 0.75f
@@ -310,8 +309,7 @@ public class RhythmusAnalyse {
         // Fehlendes Muster allein genuegt nicht fuer eine Meldung. Zwischen
         // "klar rhythmisch" und "klar musterlos" liegt ein Bereich, in dem
         // beide Masse nichts Belastbares hergeben - zwei echte Messungen
-        // derselben Person landeten dort einmal knapp darueber und einmal
-        // knapp darunter. Dort wird nichts behauptet.
+        // landeten dort einmal knapp darueber und einmal knapp darunter. Dort wird nichts behauptet.
         boolean klarOhneMuster = e.spektral < 0.42f && e.kopplung < 0.40f;
 
         if (schwankt && chaotisch && klarOhneMuster) {

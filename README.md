@@ -46,7 +46,7 @@ liegen fertige, signierte APKs im Release:
 | Datei | Was es ist |
 |---|---|
 | [`herold-1.1.0.apk`](https://github.com/chackrahunter/herold/releases/download/v1.1.0/herold-1.1.0.apk) | Benachrichtigungen vom iPhone, EKG, Puls, SpO₂, Hauttemperatur, Atemfrequenz |
-| [`markt-1.1.0.apk`](https://github.com/chackrahunter/herold/releases/download/v1.1.0/markt-1.1.0.apk) | App-Laden ohne Google-Konto |
+| `markt` — **selbst bauen** | Der App-Laden bindet `gplayapi` ein, und die steht unter GPL-3.0. Eine fertige APK ließe sich deshalb nicht unter der MIT-Lizenz dieses Repos weitergeben. Siehe [DRITTANBIETER.md](DRITTANBIETER.md). |
 | [`zifferblatt-1.1.0.apk`](https://github.com/chackrahunter/herold/releases/download/v1.1.0/zifferblatt-1.1.0.apk) | Beispiel-Ziffernblatt |
 
 ```bash
@@ -220,6 +220,8 @@ cd herold && ./build.sh --install
 | [**07 — Erkenntnisse**](docs/07-erkenntnisse.md) | **Das Wertvollste:** Dinge, die nirgends stehen und Stunden gekostet haben |
 
 > [!NOTE]
+> Alle Seiten gibt es auch auf Englisch unter [`docs/en/`](docs/en/).
+>
 > Wenn du nur eine Seite liest, dann [**07 — Erkenntnisse**](docs/07-erkenntnisse.md).
 > Dort steht unter anderem, warum ohne einen einzigen versteckten Schalter
 > **jede** App-Installation fehlschlägt, und warum ein fremdes iPhone die Uhr
@@ -248,6 +250,21 @@ springt zurück. Einfach erneut ausführen.
 Bibliotheken (Google Play, Samsung Health Sensor SDK, gplayapi) — prüfe selbst,
 ob deine Nutzung deren Bedingungen entspricht. Ziffernblätter mit geschützten
 Figuren gehören ihren Rechteinhabern; hier ist keine dabei.
+
+---
+
+## 🧩 Mehr von mir
+
+Herold ist nicht das Einzige, was ich baue. Falls du neugierig bist — hier sind
+meine anderen öffentlichen Projekte. Schau gern rein, ich freue mich über jeden,
+der vorbeikommt.
+
+| Projekt | Was es ist |
+|---|---|
+| [**SiliconFlow**](https://github.com/chackrahunter/siliconflow) | Fabric-Mod, die Minecraft auf Apple-Silicon-Macs ruhiger laufen lässt: Mixins, die Zeichenarbeit für Entities, Partikel und HUD begrenzen, speicherbewusste Budgets, optionale Diagnose-Overlays. Beta — und gebaut wird bisher genau eine Version, Minecraft 1.21.4. |
+| [**Stellium**](https://github.com/chackrahunter/stellium-chat) | Team-Chat, in dem jeder in seiner eigenen Sprache schreibt und liest — dazwischen übersetzt ein Sprachmodell, 22 Sprachen. Dazu KI-Assistent, Aufgabenbrett, Kalender und Dateiablage. Desktop-App für macOS, Windows und Linux. |
+
+Beides ist MIT-lizenziert, und für beides liegen fertige Dateien im Release.
 
 ---
 

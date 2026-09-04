@@ -1,0 +1,126 @@
+name: Bug report
+description: Something does not work the way the documentation says it should.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to write this up.
+
+        **🇩🇪 Deutsch ist genauso willkommen.** Nur die Feldnamen sind auf
+        Englisch — antworte ruhig auf Deutsch, das Projekt ist auf Deutsch
+        entstanden.
+
+        **Two things worth checking first, because they are not bugs:**
+
+        - Installation fails with `Can't install packages while in secure FRP` —
+          that is the watch's factory reset protection, and it blocks *every*
+          installation on a watch without an account. One command fixes it:
+          see [docs/07-erkenntnisse.md](https://github.com/chackrahunter/herold/blob/master/docs/07-erkenntnisse.md).
+        - After a Wear OS system update, removed apps come back, Wi-Fi debugging
+          is off again and the factory protection mode is back. Just run the
+          steps again.
+
+        **Please strip personal data out of anything you paste.** No Bluetooth
+        or MAC addresses, no IP addresses, no serial numbers, no health
+        readings from a real person. Replacing them with `xxx` costs you
+        nothing and the report still works.
+
+  - type: input
+    id: watch-model
+    attributes:
+      label: Watch model
+      description: "The model number, not the marketing name. `adb shell getprop ro.product.model` prints it."
+      placeholder: "SM-R955F"
+    validations:
+      required: true
+
+  - type: input
+    id: wear-version
+    attributes:
+      label: Wear OS version
+      description: "On the watch: Settings → About watch → Software information → Software version. `adb shell getprop ro.build.version.release` gives you the Android version underneath."
+      placeholder: "Wear OS 5, One UI Watch 6"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Which part
+      description: Where does the problem sit?
+      options:
+        - "herold — iPhone notifications (ANCS) and the health sensors"
+        - "markt — the app store without a Google account"
+        - "zifferblatt — the example watch face"
+        - "werkzeuge — uhr.sh, entruempeln.sh"
+        - "Building (aapt2 → javac → d8 → zipalign → apksigner)"
+        - "docs — the documentation is wrong or missing something"
+        - "Something else, or I am not sure"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: source
+    attributes:
+      label: Where did the app come from?
+      description: Optional, but it narrows things down fast.
+      options:
+        - "The signed APK from the latest release"
+        - "Built it myself with build.sh"
+        - "Does not apply"
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+      description: What should have happened? If the documentation promised it somewhere, a link to that line helps.
+      placeholder: "The notification from the iPhone should appear on the watch within a second or two."
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: What actually happened
+      description: Describe what you saw instead. Screenshots are welcome — drag them in here.
+      placeholder: "Nothing arrives. The watch stays connected, the Herold screen shows 'verbunden', but no notification ever shows up."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: How to reproduce it
+      description: Optional. The shortest path from a fresh start to the problem.
+      placeholder: |
+        1. ./werkzeuge/uhr.sh --id
+        2. cd herold && ./build.sh --install
+        3. Open Herold on the watch, tap ...
+
+  - type: textarea
+    id: adb
+    attributes:
+      label: adb output
+      description: |
+        Whatever adb told you. Useful commands:
+        `./werkzeuge/uhr.sh --log` (the last Herold messages),
+        `adb logcat -d -s Herold:I` or `adb logcat -d -s Markt:I`,
+        or the full output of the command that failed.
+        Check it once more for addresses and serial numbers before you paste.
+      render: shell
+      placeholder: |
+        $ adb -t 3 install -r -g build/herold.apk
+        adb: failed to install build/herold.apk: ...
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: hygiene
+    attributes:
+      label: Before you send it
+      options:
+        - label: "I removed Bluetooth/MAC addresses, IP addresses, serial numbers and health readings from everything above."
+          required: true
+        - label: "I had a quick look through the open issues and this is not already there."

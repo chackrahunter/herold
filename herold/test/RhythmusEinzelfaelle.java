@@ -34,24 +34,26 @@ public class RhythmusEinzelfaelle {
         for (int i = 0; i < 40; i++) fl2.add((int) (750 + r.nextGaussian() * 140));
         zeig("Vorhofflimmern (fein)", fl2);
 
-        // Echte Messung: 18 Jahre, Ruhe, deutliche Atemarrhythmie.
+        // Nachgebildet: Ruhe, deutliche Atemarrhythmie (Verteilung.atem()).
         // Darf unter keinen Umständen als unregelmäßig gelten.
-        int[] real = {1024,1041,1092,968,1070,1096,954,962,1149,1170,1000,1105,
-            1194,970,1024,1143,951,1059,1182,1149,1027,1147,1176,965,959,1042,
-            1026,915,1069,1174,993,1076,1120,985,966,1118,1037,893,1036,1099,
-            972,1084,1155,1048,919,1086,1146,971,1080,1150,1041,962,1123,1152,977,1080};
+        int[] real = {703,886,1006,879,728,845,1048,854,793,884,947,829,
+            777,931,948,772,819,1014,872,749,912,969,800,776,
+            915,928,732,803,960,918,736,863,984,859,777,935,
+            903,695,866,979,792,774,893,944,736,855,962,786,
+            816,981,842,738,901,900,717,859};
         List<Integer> echt = new ArrayList<>();
         for (int v : real) echt.add(v);
-        zeig("ECHT: 18 J., Atmung", echt);
+        zeig("Atemarrhythmie, ruhig", echt);
 
-        // Zweite echte Messung derselben Person, unruhiger aufgezeichnet.
-        int[] real2 = {1070,1016,1022,1104,1096,935,1042,1087,949,1042,1157,998,
-            1066,1257,1146,899,919,1103,1122,926,970,1075,1185,946,1072,1203,
-            1011,1045,1145,980,1105,1171,963,1110,1248,1247,1222,1256,1088,1233,
-            1120,1082,1211,1118,976,1085,1121,972,1060,1102};
+        // Zweite nachgebildete Reihe, unruhiger: staerkere Wanderung.
+        int[] real2 = {630,947,983,643,729,1074,754,665,1029,900,625,859,
+            1025,686,729,1025,912,651,874,1033,720,709,1077,793,
+            612,919,972,663,785,1039,814,611,917,1005,677,750,
+            1025,807,664,936,943,620,833,1039,720,733,1072,789,
+            648,982};
         List<Integer> echt2 = new ArrayList<>();
         for (int v : real2) echt2.add(v);
-        zeig("ECHT: dieselbe, unruhig", echt2);
+        zeig("Atemarrhythmie, unruhig", echt2);
 
         List<Integer> extra = new ArrayList<>(gleich);
         extra.set(10, 620); extra.set(11, 1380);

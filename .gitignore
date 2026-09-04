@@ -18,3 +18,7 @@ build/
 doku/
 apks/
 uhr-waechter.log
+
+# Arbeitsdateien, nicht zum Einchecken
+ABSCHNITT-projekte.md
+RELEASE-*.md
