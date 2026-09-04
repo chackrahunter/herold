@@ -14,7 +14,7 @@ Ziffernblätter. Alles selbst gebaut, alles ohne Gradle.
 [![Ohne Gradle](https://img.shields.io/badge/Build-ohne%20Gradle-success?style=for-the-badge)](docs/01-bauen-ohne-gradle.md)
 [![Kein Google-Konto](https://img.shields.io/badge/Google--Konto-nicht%20nötig-critical?style=for-the-badge)](docs/04-markt.md)
 
-[![Java](https://img.shields.io/badge/Java-17-orange?style=flat-square&logo=openjdk&logoColor=white)](#voraussetzungen)
+[![Java](https://img.shields.io/badge/JDK-21-orange?style=flat-square&logo=openjdk&logoColor=white)](#-voraussetzungen)
 [![Getestet auf](https://img.shields.io/badge/getestet-Galaxy%20Watch%206%20Classic-black?style=flat-square&logo=samsung&logoColor=white)](#voraussetzungen)
 [![iPhone](https://img.shields.io/badge/Gegenstelle-iPhone-lightgrey?style=flat-square&logo=apple&logoColor=white)](docs/03-herold.md)
 [![Doku](https://img.shields.io/badge/Doku-ausführlich-informational?style=flat-square)](#-dokumentation)
@@ -23,6 +23,8 @@ Ziffernblätter. Alles selbst gebaut, alles ohne Gradle.
 [![PayPal](https://img.shields.io/badge/Spenden_mit-PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://www.paypal.me/Donsko2007)
 
 <br>
+
+[🇬🇧 English](README.en.md) · 🇩🇪 **Deutsch**
 
 [**Einrichten**](docs/00-uhr-einrichten.md) ·
 [**Doku**](#-dokumentation) ·
@@ -171,7 +173,7 @@ cd herold && ./build.sh --install
 | | |
 |---|---|
 | Android SDK | **Command Line Tools** (`aapt2`, `d8`, `zipalign`, `apksigner`) + `platforms/android-33` |
-| Java | **JDK 21** |
+| Java | **JDK 21** (übersetzt wird nach Java-17-Bytecode) |
 | adb | mit **WLAN-Debugging** zur Uhr |
 | optional | `rsvg-convert` für die Grafiken des Ziffernblatts |
 
