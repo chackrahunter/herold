@@ -1,0 +1,20 @@
+# Signaturschlüssel - niemals veröffentlichen
+*.keystore
+*.jks
+*.p12
+
+# Fremde Bibliotheken: nicht im Repo, siehe docs/02-bibliotheken.md
+libs/
+*.jar
+*.aar
+
+# Bauergebnisse
+build/
+*.apk
+*.dex
+
+# Persönliche Mess- und Gerätedaten
+*.csv
+doku/
+apks/
+uhr-waechter.log

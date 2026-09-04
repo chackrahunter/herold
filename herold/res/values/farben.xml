@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="grund">#000000</color>
+    <color name="karte">#171B22</color>
+    <color name="text">#FFFFFF</color>
+    <color name="text_leise">#8B95A5</color>
+    <color name="herz">#FF3B5B</color>
+    <color name="sauerstoff">#39B8FF</color>
+    <color name="koerper">#FFAA33</color>
+    <color name="temperatur">#FF7847</color>
+    <color name="puls">#4CFF7A</color>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingLeft="20dp" android:paddingRight="20dp"
+        android:paddingTop="34dp" android:paddingBottom="34dp">
+
+        <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Herold" android:textColor="#4DA3FF"
+            android:textSize="19sp" android:textStyle="bold" />
+
+        <TextView android:id="@+id/status"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" android:gravity="center"
+            android:text="Wird geprüft…" android:textColor="#FFFFFF"
+            android:textSize="13sp" />
+
+        <TextView android:id="@+id/hinweis"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" android:gravity="center"
+            android:text="" android:textColor="#888888" android:textSize="11sp" />
+
+        <Button android:id="@+id/btnKoppeln"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Koppeln" />
+
+        <Button android:id="@+id/btnTrennen"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Kopplung lösen" />
+    </LinearLayout>
+</ScrollView>
