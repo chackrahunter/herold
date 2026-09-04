@@ -44,19 +44,19 @@ faces — all hand-built, all without Gradle.
 
 ## ⬇ Download ready-made APKs
 
-**You do not have to build anything.** Since
+One part is ready to install, two you build yourself — the reason is next to each. Since
 [**v1.1.0**](https://github.com/chackrahunter/herold/releases/latest) the release
 carries signed APKs:
 
 | File | What it is |
 |---|---|
-| [`herold-1.1.0.apk`](https://github.com/chackrahunter/herold/releases/download/v1.1.0/herold-1.1.0.apk) | iPhone notifications, ECG, heart rate, SpO₂, skin temperature, respiratory rate |
+| `herold` — **build it yourself** | Embeds the Samsung Health Sensor SDK. Samsung's licence forbids passing the SDK on and requires their approval before releasing an app that uses it. See [DRITTANBIETER.md](DRITTANBIETER.md). |
 | [`zifferblatt-1.1.0.apk`](https://github.com/chackrahunter/herold/releases/download/v1.1.0/zifferblatt-1.1.0.apk) | Example watch face |
 | `markt` — **build it yourself** | The app store bundles `gplayapi`, which is GPL-3.0, so a prebuilt APK cannot be shipped under this repository's MIT licence. See [DRITTANBIETER.md](DRITTANBIETER.md). |
 
 ```bash
 adb connect <watch-ip>:<port>
-adb install herold-1.1.0.apk
+adb install zifferblatt-1.1.0.apk
 ```
 
 > [!WARNING]

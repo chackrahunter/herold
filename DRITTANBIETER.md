@@ -12,12 +12,27 @@ Lizenz jede steht** — davon hängt ab, was mit einer gebauten APK erlaubt ist.
 
 | Library | Licence |
 |---|---|
-| Samsung Health Sensor SDK (`samsung-health-sensor.jar`, `.aar`) | Samsung proprietary SDK licence — obtain it yourself from the Samsung Developer Portal |
+| **Samsung Health Sensor SDK** (`samsung-health-sensor.jar`, `.aar`) | Samsung proprietary — **may not be redistributed** ⚠ obtain it yourself from the Samsung Developer Portal |
 | `androidx.annotation` | Apache-2.0 |
 | `androidx.concurrent:concurrent-futures` | Apache-2.0 |
 | `androidx.wear.protolayout` (+ `-expression`, `-proto`, `-external-protobuf`) | Apache-2.0 |
 | `androidx.wear.tiles` (+ `-proto`) | Apache-2.0 |
 | `com.google.guava:listenablefuture` | Apache-2.0 |
+
+> [!WARNING]
+> **The Samsung Health Sensor SDK may not be passed on, and apps using it need
+> Samsung's approval before release.** The SDK licence says the licensee "must
+> not, directly or indirectly, sell, redistribute, rent, lease, lend or
+> sublicense all or any part of the SDK" (Appendix 1, 3.4), and that before any
+> public release of an app built with it, "Licensee shall obtain prior key
+> signing for the Service from SAMSUNG" (Appendix 1, 4.4(i)). This project has
+> no such agreement. That is why **no prebuilt `herold` APK is offered** — build
+> it yourself with your own copy of the SDK, under your own licence with Samsung.
+>
+> **Das Samsung Health Sensor SDK darf nicht weitergegeben werden, und Apps, die
+> es nutzen, brauchen vor der Veröffentlichung Samsungs Zustimmung.** Deshalb
+> liegt **keine fertige `herold`-APK** im Release — selbst bauen, mit der eigenen
+> Kopie des SDK.
 
 ## markt/
 

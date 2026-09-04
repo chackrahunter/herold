@@ -15,7 +15,10 @@ Körperanalyse.
 
 - `samsung-health-sensor.jar`
 - Quelle: [Samsung Developer Portal](https://developer.samsung.com/health/sensor)
-  (Anmeldung nötig, Lizenz beachten — **nicht weiterverteilen**)
+  (Anmeldung nötig). **Die Lizenz verbietet ausdrücklich, das SDK weiterzugeben**
+  (Anhang 1, Ziffer 3.4), und verlangt für Apps, die es nutzen, vor jeder
+  Veröffentlichung Samsungs Key-Signing (Anhang 1, Ziffer 4.4(i)). Deshalb liegt
+  keine fertige `herold`-APK im Release — siehe [../DRITTANBIETER.md](../DRITTANBIETER.md).
 - Zusätzlich muss auf der Uhr die App **Samsung Health Platform** installiert und
   aktuell sein, sonst antwortet der Sensordienst nicht.
 

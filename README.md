@@ -40,18 +40,18 @@ Ziffernblätter. Alles selbst gebaut, alles ohne Gradle.
 
 ## ⬇ Fertige APKs herunterladen
 
-**Du musst nichts bauen.** Seit [**v1.1.0**](https://github.com/chackrahunter/herold/releases/latest)
+Ein Teil liegt fertig bereit, zwei musst du selbst bauen — warum, steht jeweils daneben. Seit [**v1.1.0**](https://github.com/chackrahunter/herold/releases/latest)
 liegen fertige, signierte APKs im Release:
 
 | Datei | Was es ist |
 |---|---|
-| [`herold-1.1.0.apk`](https://github.com/chackrahunter/herold/releases/download/v1.1.0/herold-1.1.0.apk) | Benachrichtigungen vom iPhone, EKG, Puls, SpO₂, Hauttemperatur, Atemfrequenz |
+| `herold` — **selbst bauen** | Bindet das Samsung Health Sensor SDK ein. Samsungs Lizenz verbietet dessen Weitergabe und verlangt für Apps, die es nutzen, vorher Samsungs Zustimmung. Siehe [DRITTANBIETER.md](DRITTANBIETER.md). |
 | `markt` — **selbst bauen** | Der App-Laden bindet `gplayapi` ein, und die steht unter GPL-3.0. Eine fertige APK ließe sich deshalb nicht unter der MIT-Lizenz dieses Repos weitergeben. Siehe [DRITTANBIETER.md](DRITTANBIETER.md). |
 | [`zifferblatt-1.1.0.apk`](https://github.com/chackrahunter/herold/releases/download/v1.1.0/zifferblatt-1.1.0.apk) | Beispiel-Ziffernblatt |
 
 ```bash
 adb connect <uhr-ip>:<port>
-adb install herold-1.1.0.apk
+adb install zifferblatt-1.1.0.apk
 ```
 
 > [!WARNING]

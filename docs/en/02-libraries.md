@@ -17,7 +17,10 @@ body composition.
 
 - `samsung-health-sensor.jar`
 - Source: [Samsung Developer Portal](https://developer.samsung.com/health/sensor)
-  (sign-in required, mind the license — **do not redistribute**)
+  (sign-in required). **The licence expressly forbids passing the SDK on**
+  (Appendix 1, 3.4) and requires Samsung's prior key signing before any public
+  release of an app that uses it (Appendix 1, 4.4(i)). That is why no prebuilt
+  `herold` APK is offered — see [../../DRITTANBIETER.md](../../DRITTANBIETER.md).
 - On top of that, the **Samsung Health Platform** app must be installed and up
   to date on the watch, otherwise the sensor service does not respond.
 
