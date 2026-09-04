@@ -56,9 +56,13 @@ nicht mitverteilt. Wie du sie bekommst, steht in
 
 ## Schnellstart
 
+> **Noch keine eingerichtete Uhr?** Eine Galaxy Watch 4+ lässt sich offiziell nur
+> mit einem Android-Telefon einrichten. Der dokumentierte Weg daran vorbei steht
+> in [`docs/00-uhr-einrichten.md`](docs/00-uhr-einrichten.md) — **damit anfangen.**
+
 ```bash
-git clone https://github.com/<dein-konto>/wearos-ohne-google.git
-cd wearos-ohne-google
+git clone https://github.com/chackrahunter/herold.git
+cd herold
 ```
 
 1. **Bibliotheken holen** — siehe [`docs/02-bibliotheken.md`](docs/02-bibliotheken.md).
@@ -109,6 +113,7 @@ gehören ihren Rechteinhabern — hier ist keine dabei.
 
 ## Doku
 
+- [00 — **Die Uhr ohne Samsung-Handy einrichten**](docs/00-uhr-einrichten.md) ← *hier anfangen*
 - [01 — Bauen ohne Gradle](docs/01-bauen-ohne-gradle.md)
 - [02 — Bibliotheken beschaffen](docs/02-bibliotheken.md)
 - [03 — Herold: Brücke zum iPhone + Gesundheit](docs/03-herold.md)
